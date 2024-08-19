@@ -6,8 +6,8 @@ public class FloatDeoubleDemo {
 		float var1 = 0.12345678901234567890f;
 		double var2 = 0.12345678901234567890;
 		
-		System.out.println(var1);
-		System.out.println(var2);
+		System.out.println(var1); // 0.12345679
+		System.out.println(var2); // 0.12345678901234568
 	}
 
 }
