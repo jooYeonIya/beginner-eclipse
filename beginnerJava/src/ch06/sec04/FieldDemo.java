@@ -9,7 +9,7 @@ public class FieldDemo {
 	}
 }
 
-// 라이브러리 클래
+// 라이브러리 클래스
 class Car {
 	String model;
 	boolean start;
