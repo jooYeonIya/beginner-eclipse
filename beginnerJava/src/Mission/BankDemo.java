@@ -18,8 +18,23 @@ public class BankDemo {
 	public Map<String, Banker> bankerMap = new HashMap<>();
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
+    public void withdraw(String accountNumber, String customerNumber, String password, long money) {
+    	Account account = accountMap.get(accountNumber);
+    	
+    	if (account != null) {
+    		if (account.customerNumber.equals(customerNumber) && account.password.equals(password)) {
+    			if (account.balance >= money) {
+    				account.balance -= money;
+    			} else {
+    				System.out.println("잔액이 부족합니다.");
+    			}
+    		} else {
+    			System.out.println("고객 번호 및 비밀호가 일치하지 않습니다.");
+    		}
+    	} else {
+    		System.out.println("계좌거 없습니다");
+    	}
+    }
 }
