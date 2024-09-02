@@ -26,4 +26,28 @@ public class Account {
     	this.password = password;
     	this.balance = 0;
     }
+    
+    // 출금
+    // 해당 은행에 계좌가 있고, 계좌번호와 고객번호, 비밀번호가 일치하면 잔액 한도 내에서 출금을 할 수 있다.	
+    public long withdraw() {
+    	return 0;
+    }
+    
+    // 입금
+    // 해당 은행에 계좌가 있고, 계좌번호와 고객번호가 일치하면 입금을 할 수 있다.	
+    public long deposit() {
+		return 0;
+	}
+    
+    // 잔액 조회
+    // 해당 은행에 계좌가 있고, 계좌번호와 고객번호, 비밀번호가 일치하면 잔액을 조회할 수 있다.	
+    public long balanceInquiry() {
+		return 0;
+	}
+    
+    // 계좌 삭제
+    // 더이상 거래를 원하지 않으면 계좌를 없앨 수 있다. 이 때 잔액이 남아있으면 모두 출금처리후 삭제처리한다.
+    // (계좌번호,고객번호,비밀번호 일치확인 필요)	
+    public void deleteAccount() {
+	}
 }
