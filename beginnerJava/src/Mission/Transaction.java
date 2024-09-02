@@ -10,7 +10,7 @@ public class Transaction {
 	String customerNumber;	// 고객 번호
 	long money; 			// 금액
 	String bankerNumber; 	// 직원 번호
-	boolean status; 		// 처리 상태
+	TransactionStatus status; // 처리 상태
 }
 
 
