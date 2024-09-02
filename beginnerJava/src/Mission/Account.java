@@ -11,4 +11,19 @@ public class Account {
     Boolean isDormantt;   			// 휴면 계좌 여부
     String password;     			// 비밀번호
     long balance;        			// 잔고
+    
+    // 계좌 생성
+    public Account(BankCode bankCode,
+    			   int accountCounter,
+    			   String customerNumber,  
+    			   String password) {
+    	this.bankCode = bankCode;
+    	this.accountNumber = String.format("%05d", accountCounter);
+    	this.customerNumber = customerNumber;
+    	this.accountOpenDate = LocalDate.now();
+    	this.accountColoseDate = null;
+    	this.isDormantt = false;
+    	this.password = password;
+    	this.balance = 0;
+    }
 }
