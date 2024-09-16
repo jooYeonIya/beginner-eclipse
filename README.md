@@ -1,2 +1,2 @@
-# beginner-eclipse
-Eclipse Beginner 
+# beginner-java
+ 
