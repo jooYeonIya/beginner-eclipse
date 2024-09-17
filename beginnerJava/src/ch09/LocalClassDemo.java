@@ -1,7 +1,4 @@
 package beginnerJava.src.ch09;
-
-import org.w3c.dom.ls.LSOutput;
-
 public class LocalClassDemo {
 
 }
