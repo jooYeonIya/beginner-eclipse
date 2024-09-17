@@ -19,6 +19,8 @@ class Phone {
     public String model;
     public String color;
 
+// 기본 생성자는 암묵적으로 제공
+
     public void bell(){
         System.out.println("벨이 울립니다");
     }
@@ -30,6 +32,7 @@ class SmartPhone extends Phone {
 
     // 부모 클래스에서 상속받은 필드로 생성자 선언
     public SmartPhone(String model, String color) {
+        // 기본 생성자만 있을 경우 super() 생략 가능 컴파일러가 자동으로 추가
         this.model = model;
         this.color = color;
     }
